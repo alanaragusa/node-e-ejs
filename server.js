@@ -30,8 +30,12 @@ app.get("/", function (req, res){
             message: "intaxe simples"
         }
     ];
+
+    const subtitle = "Uma linguagem de modelagem para criação de páginas HTML utilizando JS"
+
     res.render("pages/index", {
         qualities: items,
+        subtitle: subtitle,
     });
 })
 
